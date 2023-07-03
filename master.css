@@ -1,0 +1,395 @@
+:root {
+    --mainColor: #4c80e1;
+    --seccolor: #4f6286;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--seccolor);
+    box-shadow: 0 0 4px 0 black;
+    position: fixed;
+    z-index: 900;
+}
+
+
+header a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+header .links {
+    display: flex;
+}
+
+header li {
+    list-style: none;
+    margin-left: 30px;
+    transition: .2s linear;
+}
+
+header a:hover,
+header li:hover {
+    color: black;
+    transform: scale(1.1);
+}
+
+.main {
+    min-height: 80vh;
+    background-color: var(--seccolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+
+.main .img {
+    width: 20%;
+    animation: opacity 2s linear both;
+    margin-top: 60px;
+    opacity: 0;
+    animation: opacity 1.5s linear .3s both;
+}
+
+.img img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.main h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    opacity: 0;
+    animation: opacity 1s linear .8s both;
+    color: #eee;
+}
+
+.main h2 {
+    margin: 20px 0;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Lobster' , cursive;
+    color: #eee;
+    opacity: 0;
+    animation: opacity 1s linear 1.3s both ;
+}
+
+@keyframes opacity {
+    100% {
+        opacity: 1;
+    }
+}
+
+.about {
+    min-height: 80vh;
+    background-color: #eee;
+}
+
+.about h1 {
+    color: var(--seccolor);
+    padding: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about-me {
+    color: var(--seccolor);
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about img {
+    width: 30%;
+    border-radius: 50px;
+    transition: .7s;
+}
+
+.about img:hover {
+    transform: scale(1.05);
+}
+
+.services {
+    min-height: 80vh;
+    background-color: var(--seccolor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.services h1 {
+    color: #eee;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #eee;
+    width: 200px;
+    box-shadow: 0 0 5px 0 rgb(1, 1, 1 ,20%);
+    text-align: center;
+    transition: .6s ease;
+    margin: 10px 10px; 
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.icon {
+    color: var(--seccolor);
+    font-size: 50px;
+    margin:10px 0px;
+    font-weight: bold;
+}
+
+.details h2 {
+    color: var(--seccolor);
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.details p {
+    font-size: 20px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.projects {
+    min-height: 80vh;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projects h1 {
+    color: var(--seccolor);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: rgb(1, 1, 1 ,10%);
+    width: 300px;
+    text-align: center;
+    transition: .6s ease;
+    margin: 10px 10px; 
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.project-img {
+    width: 100%;
+}
+
+.project-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.information a {
+    color: var(--seccolor);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.information p {
+    font-size: 15px;
+}
+
+.project:hover {
+    transform: scale(1.1);
+} 
+
+.information a:hover {
+    transform: scale(1.08);
+    text-decoration: underline;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: rgb(1, 1, 1 ,10%);
+}
+
+footer h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--seccolor);
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer p {
+    font-size: 20px; 
+    padding: 10px;
+    margin-bottom: 30px;       
+}
+
+.contact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.links-contact a {
+    margin: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: var(--seccolor);
+    text-decoration: none;
+}
+
+.copy a {
+    text-decoration: none;
+    color: unset;
+    transition: .3s linear;
+}
+
+.copy a:hover {
+    color: var(--seccolor);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+    header a {
+        font-size: 12px;
+    }
+
+    header li {
+        margin-left: 10px;
+    }
+
+    .main .img {
+        width: 50%;
+    }
+
+    .about h1 {
+        color: var(--seccolor);
+        padding: 30px;
+        font-size: 30px;
+    }
+
+    .about-me {
+        color: var(--seccolor);
+        padding: 10px;
+        font-size: 30px;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .services h1 {
+        font-size: 30px;
+        padding: 30px;
+    }
+
+    .projects h1 {
+        font-size: 30px;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 751px) and (max-width:991) {
+    header a {
+        font-size: 17px;
+    }
+
+    header li {
+        margin-left: 15px;
+    }
+
+    .main .img {
+        width: 50%;
+    }
+
+    .about h1 {
+        color: var(--seccolor);
+        padding: 30px;
+        font-size: 40px;
+    }
+
+    .about-me {
+        color: var(--seccolor);
+        padding: 10px;
+        font-size: 35px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .about img {
+        width: 40%;
+    }
+
+    .services h1 {
+        font-size: 40px;
+    }
+
+    .projects h1 {
+        font-size: 40px;
+        padding: 10px;
+    }
+}
